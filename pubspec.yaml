@@ -31,12 +31,24 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
-  oidc: ^0.12.1+2
-  oidc_default_store: ^0.4.0+3
-  oidc_core: ^0.14.2+1
+  oidc:
+    path: pakages/oidc/packages/oidc
+  oidc_default_store:
+    path: pakages/oidc/packages/oidc_default_store
+  oidc_core:
+    path: pakages/oidc/packages/oidc_core
+  # oidc_web_core: 
+  #   path: pakages/oidc/packages/oidc_web_core
+
+  # oidc: ^0.12.1+2
+  # oidc_default_store: ^0.4.0+3
+  # oidc_core: ^0.14.2+1
+  shared_preferences: ^2.5.3
+  bloc: ^9.0.0
+  freezed_annotation: ^3.1.0
+  dio: ^5.9.0
+  flutter_bloc: ^9.1.1
 
 dev_dependencies:
   flutter_test:

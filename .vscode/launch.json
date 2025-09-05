@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+                {
+            "name": "lk_shop (dev debug mode)",
+            "request": "launch",
+            "type": "dart",
+            "toolArgs": [
+                "--dart-define-from-file",
+                "lib/env.dev.json",
+            ]
+        },
+      
+        {
+            "name": "lk_shop (web dev debug mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "toolArgs": [
+                "-d web-server",
+                "--web-hostname",
+                "localhost",
+                "--web-port",
+                "8080",
+                "--dart-define-from-file",
+                "lib/env.dev.json",
+                "--web-browser-flag",
+                "--disable-web-security"
+            ]
+        },
+        
+    ]
+}
+// -d web-server 
+// --web-hostname localhost 
+// --web-port 8080 
+// --dart-define-from-file "lib/env.dev.json"
